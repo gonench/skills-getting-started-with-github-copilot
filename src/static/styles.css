@@ -142,3 +142,47 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants section */
+.participants-section {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #e0e0e0;
+}
+
+.participants-title {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Make participants display as compact, wrap-able badges */
+.participants-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.participant-item {
+  display: inline-block;
+  background: linear-gradient(180deg, #eef7ff, #e6f0ff);
+  border: 1px solid #d7e8ff;
+  color: #0b3d91;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  white-space: nowrap;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset;
+}
+
+/* When no participants show a subtle hint */
+.no-participants {
+  color: #757575;
+  font-style: italic;
+  margin: 6px 0 0 0;
+}
